@@ -6,12 +6,124 @@ author: Semasuka Stern
 <html lang="en">
     <head>
         <title>VSJ | Video Studio Jamaica Production</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Video Studio Jamaica Production">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" href="resources/css/main.css">
-        <link rel="shortcut icon" type="image/png" href="resources/img/cameraman1.jpg"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="resources/favicon/VSJ_favicon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,300italic" rel="stylesheet">
     </head>
     <body>
-        <h1>Video studio Jamaica</h1>
-        <h2></h2>
+        <header>
+            <div class="video-container">
+              <video autoplay loop muted poster="resources/img/papy.jpg">
+                <source src="resources/video/intro-video.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="intro">
+              <nav>
+                  <div class="row">
+                      <img src="resources/img/VSJ1-no-bk.png" alt="VSJ logo" class="logo">
+                      <ul class="main-nav">
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Previous work</a></li> 
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact us</a></li>
+                      </ul>
+                  </div>
+              </nav>
+              <div id="intro-text">
+                <h1>We record<br>your<br><span>precious memories</span></h1>
+                <div class="button">
+                    <a href="#" class="btn btn-full">Hire us</a>
+                    <a href="#" class="btn btn-ghost">Our work</a>
+                </div>
+              </div>
+            </div>
+        </header>
+
     </body>
 </html>
+
+<!-- scroll down arrow
+
+html
+
+<section id="section07" class="demo">
+  <h1>Scroll Down Button #7</h1>
+  link to the next section
+  <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+</section>
+
+css
+
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+js
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+-->

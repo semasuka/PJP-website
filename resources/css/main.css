@@ -1,3 +1,156 @@
+/* basic setup */
+
 * {
-    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* reusable components */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.button {
+    text-align: center;
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300px;
+    text-decoration: none;
+    border-radius: 200px;
+    font-weight: 500;
+    -webkit-box-transition: all 1s ease;
+    -moz-box-transition: all 1s ease;
+    transition: all 1s ease;
+
+}
+.btn-full:link,
+.btn-full:visited {
+    background: rgba(186,129,59,1);
+    background: -moz-linear-gradient(left, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(251,241,168,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(186,129,59,1)), color-stop(0%, rgba(186,129,59,1)), color-stop(0%, rgba(186,129,59,1)), color-stop(100%, rgba(251,241,168,1)));
+    background: -webkit-linear-gradient(left, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(251,241,168,1) 100%);
+    background: -o-linear-gradient(left, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(251,241,168,1) 100%);
+    background: -ms-linear-gradient(left, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(251,241,168,1) 100%);
+    background: linear-gradient(to right, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(186,129,59,1) 0%, rgba(251,241,168,1) 100%);
+    color: black;
+    -webkit-box-transition: all 1s ease;
+    -moz-box-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-right: 31px;
+    margin: 20px auto;
+    margin-right: 50px
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fbf1a8;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    color: #fbf1a8;
+    -webkit-box-transition: all 1s ease;
+    -moz-box-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.btn-full:hover,
+.btn-full:active {
+    background: #865d2b;
+    background: -moz-linear-gradient(left, #865d2b 0%, #865d2b 0%,#865d2b 0%,#d3c98b 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #865d2b), color-stop(0%, #865d2b), color-stop(0%, #865d2b), color-stop(100%, #d3c98b ));
+    background: -webkit-linear-gradient(left, #865d2b 0%,#865d2b 0%, #865d2b 0%, #d3c98b  100%);
+    background: -o-linear-gradient(left, #865d2b 0%, #865d2b 0%, #865d2b 0%, #d3c98b  100%);
+    background: -ms-linear-gradient(left, #865d2b 0%, #865d2b 0%, #865d2b 0%, #d3c98b 100%);
+    background: linear-gradient(to right, #865d2b 0%, #865d2b 0%, #865d2b 0%, #d3c98b 100%);
+    -webkit-box-transition: all 1s ease;
+    -moz-box-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #fbf1a8;
+    color: black;
+    -webkit-box-transition: all 1s ease;
+    -moz-box-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* intro section */
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.video-container video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.video-mask {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,.4);
+}
+#intro {
+    background: gray;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3em 3em 3em 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #eee;
+    height: 100vh;
+}
+#intro-text {
+    margin-top: 20vh;
+}
+#intro h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+#main-content {
+    background: gray;
+    color: #eee;
+}
+#intro span {
+    color: #f9e877;
+    font-style: italic;
+}
+.logo {
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.main-nav {
+    float: right;
 }
