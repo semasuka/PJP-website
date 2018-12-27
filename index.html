@@ -15,7 +15,11 @@ author: Semasuka Stern
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" href="resources/css/main.css">
         <link rel="shortcut icon" type="image/png" href="resources/favicon/VSJ_favicon.png"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,300italic" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="resources/javascript/myjs.js"></script>
+        <script type="text/javascript" src="resources/javascript/text-ani-intro.js"></script>
     </head>
     <body>
         <header>
@@ -30,100 +34,56 @@ author: Semasuka Stern
                       <img src="resources/img/VSJ1-no-bk.png" alt="VSJ logo" class="logo">
                       <ul class="main-nav">
                         <li><a href="#">Mission</a></li>
-                        <li><a href="#">Previous work</a></li> 
+                        <li><a href="#">Recent work</a></li>
                         <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Clients</a></li>
                         <li><a href="#">Contact us</a></li>
                       </ul>
                   </div>
               </nav>
               <div id="intro-text">
-                <h1>We record<br>your<br><span>precious memories</span></h1>
+                <h1>We are <span>proud</span> to capture your<br>
+                    <a class="typewrite" data-period="2000" data-type='[ "precious celebration.", "informative documentaries.", "important conferences."]'>
+                      <span class="wrap"></span>
+                    </a>
+                </h1>
                 <div class="button">
                     <a href="#" class="btn btn-full">Hire us</a>
                     <a href="#" class="btn btn-ghost">Our work</a>
                 </div>
               </div>
+              <div id="scroll" class="demo">
+                  <a href="#section-mission"><span></span><span></span><span></span>Scroll</a>
+              </div>
             </div>
         </header>
-
+        <section id="section-mission">
+          <div class="row">
+            <h2>Quality video is our motto</h2>
+            <p class="long-copy">We're a video production agency based in Burundi, we help businesses and brands to achieve more with video.</p>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-4">
+              <i class="fas fa-star fa-2x"></i>
+              <h3>Professional video production</h3>
+              <p>Utilize our state-of-the-art video editing techniques to sell your story. We assist you film your project, manage it, and ultimately edit it to YOUR specifications for your brand.</p>
+            </div>
+            <div class="col span-1-of-4">
+              <i class="fas fa-crosshairs fa-2x"></i>
+              <h3>Achieve your goals</h3>
+              <p>We believe video should deliver results. Our approach combines expertise & passion with a deep understanding of you and your audience to make videos that engage, inspire and compel people to act.</p>
+            </div>
+            <div class="col span-1-of-4">
+              <i class="fas fa-handshake fa-2x"></i>
+              <h3>Build a video partnership</h3>
+              <p>We want to create collaborative relationships that last longer and keep on growing. We continually push ourselves to do better by producing high quality video, and we challenge everyone we work with too.</p>
+            </div>
+            <div class="col span-1-of-4">
+              <i class="fas fa-brain fa-2x"></i>
+              <h3>The experience and confidence</h3>
+              <p>It’s no accident that VSJ has remained in business for over 10 years. Burundi’s savviest executives in both government and private sector have consistently picked VSJ because of our results</p>
+            </div>
+          </div>
+        </section>
     </body>
 </html>
-
-<!-- scroll down arrow
-
-html
-
-<section id="section07" class="demo">
-  <h1>Scroll Down Button #7</h1>
-  link to the next section
-  <a href="#section08"><span></span><span></span><span></span>Scroll</a>
-</section>
-
-css
-
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-js
-
-$(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
--->
