@@ -56,7 +56,6 @@ html {
     transition: all 1s ease;
     padding-right: 31px;
     margin: 20px auto;
-    margin-right: 50px
 }
 
 .btn-ghost:link,
@@ -499,4 +498,49 @@ li.video:hover:before {
 }
 #olympic {
     width: 80%;
+}
+/*---------------pricing section---------------*/
+.section-pricing {
+    background-color: #f1f1f1;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 7px 7px 7px rgb(182, 182, 182);
+}
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #fcfcfc;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+.plan-price {
+    font-size: 240%;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #865d2b;
+}
+.plan-price span {
+    font-size: 50%;
+    font-weight: 300;
+}
+.plan-price-explain {
+    font-size: 80%;
+    text-align: center;
+}
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li {
+    padding: 5px 0;
 }
