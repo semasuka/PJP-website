@@ -28,7 +28,8 @@ html {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300px;
@@ -42,7 +43,8 @@ html {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
     background: rgba(186, 129, 59, 1);
     background: -moz-linear-gradient(left, rgba(186, 129, 59, 1) 0%, rgba(186, 129, 59, 1) 0%, rgba(186, 129, 59, 1) 0%, rgba(251, 241, 168, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(186, 129, 59, 1)), color-stop(0%, rgba(186, 129, 59, 1)), color-stop(0%, rgba(186, 129, 59, 1)), color-stop(100%, rgba(251, 241, 168, 1)));
@@ -56,6 +58,7 @@ html {
     transition: all 1s ease;
     padding-right: 31px;
     margin: 20px auto;
+    border: 1px solid #d3c98b;
 }
 
 .btn-ghost:link,
@@ -70,7 +73,9 @@ html {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
     background: #865d2b;
     background: -moz-linear-gradient(left, #865d2b 0%, #865d2b 0%, #865d2b 0%, #d3c98b 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, #865d2b), color-stop(0%, #865d2b), color-stop(0%, #865d2b), color-stop(100%, #d3c98b));
@@ -81,6 +86,7 @@ html {
     -webkit-box-transition: all 1s ease;
     -moz-box-transition: all 1s ease;
     transition: all 1s ease;
+    cursor: pointer;
 }
 
 .btn-ghost:hover,
@@ -205,9 +211,8 @@ section {
 }
 
 #intro-text {
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
-
 #intro span {
     color: #f9e877;
     font-style: italic;
@@ -217,7 +222,7 @@ section {
     height: 100%;
     width: 35%;
     float: left;
-    margin-left: -7%;
+    margin-left: -3%;
 }
 
 .main-nav {
@@ -251,9 +256,9 @@ section {
 
 /* scrolldown */
 
-
 #scroll a {
     padding-top: 80px;
+    margin-left: -3.3%;
 }
 
 #scroll a span {
@@ -327,7 +332,6 @@ section {
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: #fff;
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
@@ -375,6 +379,9 @@ section {
 /*---------------mission section---------------*/
 .col-container {
     padding-top: 40px;
+}
+#section-mission {
+    padding: 60px 30px;
 }
 
 /*---------------work section---------------*/
@@ -543,4 +550,103 @@ li.video:hover:before {
 }
 .plan-box ul li {
     padding: 5px 0;
+}
+/*---------------contact section---------------*/
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+#find-us {
+    width: 40%;
+}
+.address {
+    text-align: center;
+    margin-top: 3%;
+}
+.address p {
+    line-height: 40px;
+}
+form span {
+    color: red;
+}
+#name,
+#telephone,
+#email,
+#text-area {
+    outline-color:#865d2b;
+}
+/*---------------footer section---------------*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    cursor: pointer;
+    color: white;
+}
+#my-site {
+    color: #f9e877;
+}
+#my-site:hover {
+    color: #beb15a;
+    text-decoration: none;
+}
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+footer li:last-child {
+    margin-right: 0;
+}
+.social-row {
+    margin-bottom: 50px;
+}
+.copyright-row{
+    margin-bottom: 10px;
+}
+footer {
+    padding: 40px 0 30px 0;
+}
+.fb-color {
+    transition: all 0.5s;
+}
+.yt-color {
+    transition: all 0.5s;
+}
+.ig-color {
+    transition: all 0.5s;
+
+}
+.tw-color {
+    transition: all 0.5s;
+}
+.fb-color:hover {
+    color: #3b5999;
+    transition: all 0.5s;
+}
+.yt-color:hover {
+    color: #cd201f;
+    transition: all 0.5s;
+}
+.ig-color:hover {
+    color:#ff0084;
+    transition: all 0.5s;
+}
+.tw-color:hover {
+    color: #55acee;
+    transition: all 0.5s;
 }

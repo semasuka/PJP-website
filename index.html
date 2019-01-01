@@ -14,7 +14,8 @@ author: Semasuka Stern
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-  <link rel="stylesheet" href="resources/css/main.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/main.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   <link rel="shortcut icon" type="image/png" href="resources/favicon/VSJ_favicon.png" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
@@ -55,15 +56,16 @@ author: Semasuka Stern
           <a href="#" class="btn btn-full">Hire us</a>
           <a href="#" class="btn btn-ghost">Our work</a>
         </div>
+        <div id="scroll" class="demo">
+          <a href="#section-mission"><span></span><span></span><span></span>Scroll</a>
+        </div>
       </div>
-      <div id="scroll" class="demo">
-        <a href="#section-mission"><span></span><span></span><span></span>Scroll</a>
-      </div>
+
     </div>
   </header>
   <section id="section-mission">
     <div class="row">
-      <h2>Quality videos is our Mission</h2>
+      <h2>Outstanding quality videos is our Mission</h2>
       <p class="long-copy">We're a video production agency based in Burundi, we help businesses and brands to achieve
         more with video.</p>
     </div>
@@ -98,7 +100,7 @@ author: Semasuka Stern
         </div>
         <h3>The experience and confidence</h3>
         <p>It’s no accident that we have remained in business for over 10 years. Burundi’s savviest executives in both
-          government and private sector have consistently work with us because of our results.</p>
+          government and private sector have consistently work with us because of our services.</p>
       </div>
     </div>
   </section>
@@ -208,10 +210,10 @@ author: Semasuka Stern
           </div>
           <div>
             <ul>
-              <li><i class="fas fa-check"></i>  feature 1</li>
-              <li><i class="fas fa-check"></i>  feature 2</li>
-              <li><i class="fas fa-check"></i>  feature 3</li>
-              <li><i class="fas fa-check"></i>  feature 4</li>
+              <li><i class="fas fa-check"></i> feature 1</li>
+              <li><i class="fas fa-check"></i> feature 2</li>
+              <li><i class="fas fa-check"></i> feature 3</li>
+              <li><i class="fas fa-check"></i> feature 4</li>
             </ul>
           </div>
           <div>
@@ -228,10 +230,10 @@ author: Semasuka Stern
           </div>
           <div>
             <ul>
-              <li><i class="fas fa-check"></i>  feature 1</li>
-              <li><i class="fas fa-check"></i>  feature 2</li>
-              <li><i class="fas fa-check"></i>  feature 3</li>
-              <li><i class="fas fa-check"></i>  feature 4</li>
+              <li><i class="fas fa-check"></i> feature 1</li>
+              <li><i class="fas fa-check"></i> feature 2</li>
+              <li><i class="fas fa-check"></i> feature 3</li>
+              <li><i class="fas fa-check"></i> feature 4</li>
             </ul>
           </div>
           <div>
@@ -243,15 +245,15 @@ author: Semasuka Stern
         <div class="plan-box">
           <div>
             <h3>Documentaries</h3>
-            <p class="plan-price-explain">(broadcast,short film,long film...)</p>
+            <p class="plan-price-explain">(broadcast,short & long film...)</p>
             <p class="plan-price"><span>start from</span><br>1.000.000 Fbu</p>
           </div>
           <div>
             <ul>
-              <li><i class="fas fa-check"></i>  feature 1</li>
-              <li><i class="fas fa-check"></i>  feature 2</li>
-              <li><i class="fas fa-check"></i>  feature 3</li>
-              <li><i class="fas fa-check"></i>  feature 4</li>
+              <li><i class="fas fa-check"></i> feature 1</li>
+              <li><i class="fas fa-check"></i> feature 2</li>
+              <li><i class="fas fa-check"></i> feature 3</li>
+              <li><i class="fas fa-check"></i> feature 4</li>
             </ul>
           </div>
           <div>
@@ -266,9 +268,93 @@ author: Semasuka Stern
       <h2>Contact Us</h2>
     </div>
     <div class="row">
-      <form method="post" action="#" class=""
+      <form method="post" action="#" class="contact-form">
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="name">Name<span>*</span></label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="telephone">Telephone<span>*</span></label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="tel" name="telephone" id="telephone" placeholder="Your telephone number" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="email">Email<span>*</span></label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label for="find-us">How did you find us?</label>
+          </div>
+          <div class="col span-2-of-3">
+            <select name="find-us" id="find-us">
+              <option value="friends">Friends</option>
+              <option value="search">Search engine</option>
+              <option value="social">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>How can we help you?<span>*</span></label>
+          </div>
+          <div class="col span-2-of-3">
+            <textarea name="message" id="text-area" placeholder="Your message goes here" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col span-1-of-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input type="submit" value="Send">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row address">
+      <h2>Where to find us</h2>
+      <p>Boulevard Prince Louis Rwagasore, Galerie Bella Vista Office No.3
+        <br>P.O Box: 7325 Bujumbura, Burundi
+        <br>Email: papyjamaica@gmail.com
+        <br>Tel: +257 22 22 08 96, +257 79 924 739, +257 75 702 030, +257 77 773 142</p>
     </div>
   </section>
+  <footer>
+    <div class="row social-row">
+      <ul class="social-links">
+        <li>
+          <p>Follow us on social media</p>
+        </li>
+        <li><a href="#"><i class="fab fa-1x fa-facebook-f fb-color"></i></a></i></li>
+        <li><a href="#"><i class="fab fa-1x fa-instagram ig-color"></i></a></li>
+        <li><a href="#"><i class="fab fa-1x fa-youtube yt-color"></i></a></li>
+        <li><a href="#"><i class="fab fa-1x fa-twitter tw-color"></i></a></li>
+      </ul>
+    </div>
+    <div class="row copyright-row">
+      <p>Copyright &copy; <script type="text/javascript">
+          var d = new Date()
+          document.write(d.getFullYear())
+        </script> by VSJ. All rights reserved.</p>
+    </div>
+    <div class="row">
+      <p>This website was built with<span style="color: #e25555;"> ♥ </span> by <a href="https://semasuka.github.io/blog/about/"
+          id="my-site" target="_blank">Semasuka Stern</a></p>
+    </div>
+  </footer>
 </body>
 
 </html>
