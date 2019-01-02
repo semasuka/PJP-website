@@ -14,6 +14,7 @@ author: Semasuka Stern
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
   <link rel="stylesheet" type="text/css" href="resources/css/main.css">
   <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   <link rel="shortcut icon" type="image/png" href="resources/favicon/VSJ_favicon.png" />
@@ -36,11 +37,11 @@ author: Semasuka Stern
           <img src="resources/img/VSJ8-no-bk.png" alt="VSJ logo" class="logo-black">
 
           <ul class="main-nav">
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Recent work</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#section-mission">Mission</a></li>
+            <li><a href="#featured-videos">Recent work</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact us</a></li>
           </ul>
         </div>
       </nav>
@@ -51,8 +52,8 @@ author: Semasuka Stern
           </a>
         </h1>
         <div class="button">
-          <a href="#" class="btn btn-full">Hire us</a>
-          <a href="#" class="btn btn-ghost">Our work</a>
+          <a href="#" class="btn btn-full js--scroll-to-contact">Hire us</a>
+          <a href="#" class="btn btn-ghost js--scroll-to-work">Our work</a>
         </div>
         <div id="scroll" class="demo">
           <a href="#section-mission"><span></span><span></span><span></span>Scroll</a>
@@ -67,7 +68,7 @@ author: Semasuka Stern
       <p class="long-copy">We're a video production agency based in Burundi, we help businesses and brands to achieve
         more with video.</p>
     </div>
-    <div class="row col-container">
+    <div class="row col-container js--wp-1">
       <div class="col span-1-of-4 box">
         <div class="icon-cont">
           <i class="fas fa-star fa-2x icon-big"></i>
@@ -102,7 +103,7 @@ author: Semasuka Stern
       </div>
     </div>
   </section>
-  <section class="section-work main videos" id="featured-videos">
+  <section class="section-work main videos js--section-work" id="featured-videos">
     <h2>Our recent work</h2>
     <div class="video-grid front-page" id="front-page-videos">
       <ul class="video-list featured">
@@ -163,105 +164,115 @@ author: Semasuka Stern
       </ul>
     </div>
   </section>
-  <section class="section-clients">
+  <section class="section-clients" id="clients">
     <h2>Some of our clients</h2>
     <div class="row col-container">
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/olympic.png" id="olympic" alt="olympic">
+      <div class="js--wp-2">
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/olympic.png" id="olympic" alt="olympic">
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/ifb.jpg" id="ifb" alt="olympic">
+        </div>
       </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/ifb.jpg" id="ifb" alt="olympic">
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/club.jpg" id="club" alt="olympic">
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/gov.png" id="gov" alt="olympic">
+      <div class="js--wp-3">
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/club.jpg" id="club" alt="olympic">
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/gov.png" id="gov" alt="olympic">
+        </div>
       </div>
     </div>
     <div class="row col-container">
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/miss.jpg" id="olympic" alt="miss burundi">
+      <div class="js--wp-2">
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/miss.jpg" id="olympic" alt="miss burundi">
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/unhcr.jpg" id="ifb" alt="unhcr">
+        </div>
       </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/unhcr.jpg" id="ifb" alt="unhcr">
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/unicef.jpeg" id="club" alt="unicef">
-      </div>
-      <div class="col span-1-of-4 box">
-        <img src="resources/img/rtnb.jpg" id="gov" alt="rtnb">
+      <div class="js--wp-3">
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/unicef.jpeg" id="club" alt="unicef">
+        </div>
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/rtnb.jpg" id="gov" alt="rtnb">
+        </div>
       </div>
     </div>
   </section>
-  <section class="section-pricing">
+  <section class="section-pricing" id="pricing">
     <div class="row">
       <h2>Our Pricing</h2>
     </div>
     <div class="row">
-      <div class="col span-1-of-3">
-        <div class="plan-box">
-          <div>
-            <h3>Private events</h3>
-            <p class="plan-price-explain">(marriage,dowry,burial...)</p>
-            <p class="plan-price"><span>start from</span><br>300.000 Fbu</p>
-          </div>
-          <div>
-            <ul>
-              <li><i class="fas fa-check"></i> feature 1</li>
-              <li><i class="fas fa-check"></i> feature 2</li>
-              <li><i class="fas fa-check"></i> feature 3</li>
-              <li><i class="fas fa-check"></i> feature 4</li>
-            </ul>
-          </div>
-          <div>
-            <a href="#" class="btn btn-full">I want this plan</a>
-          </div>
-        </div>
-      </div>
-      <div class="col span-1-of-3">
-        <div class="plan-box">
-          <div>
-            <h3>Public events</h3>
-            <p class="plan-price-explain">(crusade,conferences,show...)</p>
-            <p class="plan-price"><span>start from</span><br>600.000 Fbu</p>
-          </div>
-          <div>
-            <ul>
-              <li><i class="fas fa-check"></i> feature 1</li>
-              <li><i class="fas fa-check"></i> feature 2</li>
-              <li><i class="fas fa-check"></i> feature 3</li>
-              <li><i class="fas fa-check"></i> feature 4</li>
-            </ul>
-          </div>
-          <div>
-            <a href="#" class="btn btn-full">I want this plan</a>
+      <div class="js--wp-4">
+        <div class="col span-1-of-3">
+          <div class="plan-box">
+            <div>
+              <h3>Private events</h3>
+              <p class="plan-price-explain">(marriage,dowry,burial...)</p>
+              <p class="plan-price"><span>start from</span><br>300.000 Fbu</p>
+            </div>
+            <div>
+              <ul>
+                <li><i class="fas fa-check"></i> feature 1</li>
+                <li><i class="fas fa-check"></i> feature 2</li>
+                <li><i class="fas fa-check"></i> feature 3</li>
+                <li><i class="fas fa-check"></i> feature 4</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-full">I want this plan</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col span-1-of-3">
-        <div class="plan-box">
-          <div>
-            <h3>Documentaries</h3>
-            <p class="plan-price-explain">(broadcast,short & long film...)</p>
-            <p class="plan-price"><span>start from</span><br>1.000.000 Fbu</p>
+        <div class="col span-1-of-3">
+          <div class="plan-box">
+            <div>
+              <h3>Public events</h3>
+              <p class="plan-price-explain">(crusade,conferences,show...)</p>
+              <p class="plan-price"><span>start from</span><br>600.000 Fbu</p>
+            </div>
+            <div>
+              <ul>
+                <li><i class="fas fa-check"></i> feature 1</li>
+                <li><i class="fas fa-check"></i> feature 2</li>
+                <li><i class="fas fa-check"></i> feature 3</li>
+                <li><i class="fas fa-check"></i> feature 4</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-full">I want this plan</a>
+            </div>
           </div>
-          <div>
-            <ul>
-              <li><i class="fas fa-check"></i> feature 1</li>
-              <li><i class="fas fa-check"></i> feature 2</li>
-              <li><i class="fas fa-check"></i> feature 3</li>
-              <li><i class="fas fa-check"></i> feature 4</li>
-            </ul>
-          </div>
-          <div>
-            <a href="#" class="btn btn-full">I want this plan</a>
+        </div>
+        <div class="col span-1-of-3">
+          <div class="plan-box">
+            <div>
+              <h3>Documentaries</h3>
+              <p class="plan-price-explain">(broadcast,short & long film...)</p>
+              <p class="plan-price"><span>start from</span><br>1.000.000 Fbu</p>
+            </div>
+            <div>
+              <ul>
+                <li><i class="fas fa-check"></i> feature 1</li>
+                <li><i class="fas fa-check"></i> feature 2</li>
+                <li><i class="fas fa-check"></i> feature 3</li>
+                <li><i class="fas fa-check"></i> feature 4</li>
+              </ul>
+            </div>
+            <div>
+              <a href="#" class="btn btn-full">I want this plan</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section-contact">
+  <section class="section-contact js--section-plans" id="contact">
     <div class="row">
       <h2>Contact Us</h2>
     </div>
@@ -360,7 +371,6 @@ author: Semasuka Stern
   <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
   <script type="text/javascript" src="resources/javascript/myjs.js"></script>
-  <script type="text/javascript" src="resources/javascript/my-waypoint.js"></script>
   <script type="text/javascript" src="resources/javascript/text-ani-intro.js"></script>
 </body>
 

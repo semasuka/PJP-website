@@ -264,7 +264,8 @@ section {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 2;
-    box-shadow: 0px 3px 3px #a7a7a7;
+    -webkit-box-shadow: 0px 3px 3px #a7a7a7;
+            box-shadow: 0px 3px 3px #a7a7a7;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -719,8 +720,17 @@ footer {
     transition: all 0.5s;
 }
 
+/*---------------animation---------------*/
 
-
-
-
-
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4{
+    opacity: 0;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated{
+    opacity: 1;
+}
