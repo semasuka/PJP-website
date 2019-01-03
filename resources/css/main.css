@@ -624,23 +624,24 @@ li.video:hover:before {
 .plan-box ul li {
     padding: 5px 0;
 }
-/*---------------contact section---------------*/
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
+/*---------------contact section and map---------------*/
+.responsive-map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 10%;
 }
-input[type=text],
-input[type=email],
-input[type=tel],
-select,
-textarea {
+
+.responsive-map-container iframe,
+.responsive-map-container object,
+.responsive-map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 7px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-}
-#find-us {
-    width: 40%;
+    height: 100%;
 }
 .address {
     text-align: center;
