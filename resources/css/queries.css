@@ -30,12 +30,8 @@
         font-size: 85%;
     }
 
-    .main-nav {
-        font-size: 85%;
-    }
-
     .logo {
-        width: 30%;
+        width: 27%;
     }
 
     section {
@@ -67,9 +63,46 @@
     body {
         font-size: 16px;
     }
+    .main-nav li {
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .sticky .main-nav li{
+        margin: 10px 0px 10px 0px;
+    }
+    #intro-text {
+        margin-top: 20vh;
+    }
 
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 8px 0;
+    }
     section {
         padding: 30px 0
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .main-nav {
+        display: none;
+        float: left;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+    .sticky .mobile-nav-icon i {
+        color: black;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
     }
 
     .row,
@@ -81,19 +114,15 @@
         width: 100%;
     }
 
-    .main-nav {
-        display: none;
-    }
-
     .logo {
-        width: 65%;
+        width: 50%;
     }
 
     .section-clients .box {
         width: 50%;
         margin: 40px auto;
     }
-    
+
     .col {
         margin: 10px auto;
     }
@@ -103,12 +132,18 @@
         margin-top: -20px;
     }
 
-}
+    .sticky .logo-black {
+        width: 45%;
+    }
 
+}
 
 /*---------------Small phones: 0px to 480px---------------*/
 @media only screen and (max-width: 480px) {
     section {
         padding: 25px 0;
+    }
+    #intro-text h1 {
+        font-size: 7px;
     }
 }
