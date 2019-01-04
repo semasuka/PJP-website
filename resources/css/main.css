@@ -578,6 +578,18 @@ li.video:hover:before {
 #olympic {
     width: 80%;
 }
+#miss-burundi {
+    width: 75%;
+}
+#unhcr {
+    width: 60%;
+}
+#unicef{
+    width: 65%;
+}
+#rtnb{
+    width: 50%;
+}
 /*---------------pricing section---------------*/
 .section-pricing {
     background-color: #f1f1f1;
