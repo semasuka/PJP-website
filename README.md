@@ -1,2 +1,2 @@
 # PJP
-New modern Papy Jamaica Production Studio's website
+Papy Jamaica Production Studio's website
