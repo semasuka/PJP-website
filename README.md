@@ -1,2 +1,2 @@
-# VSJ
-Video Studio Jamaica new website
+# PJP
+New modern Papy Jamaica Production Studio's website
